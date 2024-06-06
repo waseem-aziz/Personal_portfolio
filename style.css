@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(123 120 123);
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background: rgb(117, 116, 116);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 22px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(184, 18, 18);
+    font-size: 1.03rem;
+}
+
+.left {
+    font-size: 2rem;
+}
+.first {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    align-items: center;
+
+}
+.first>div {
+    width: 50%;
+}
+.leftsection {
+    background: transparent;
+    margin-left: 8%;
+    font-size: 3rem;
+}
+.leftsection .dcv {
+    padding: 12px 20px;
+    background-color: crimson;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.leftsection .dcv:hover {
+    background: linear-gradient(rgb(244, 35, 35));
+    transform: scale(1.05);
+}
+.dcv,
+.git {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.leftsection .git {
+    width: 18%;
+    margin-left: 20%;
+    transform: transform 0.5s;
+}
+.leftsection .git:hover {
+    transform: translateY(-5px);
+}
+.rightsection img {
+    width: 70%;
+    margin: 50px 0;
+    margin-top: 1px;
+    margin-left: 15%;
+}
+.name_colour {
+    color: rgb(166, 164, 164);
+}
+#element {
+    color: crimson;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 40px 0;
+}
+.about-col-1 img {
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 12px;
+    border-radius: 18px;
+}
+.about-col-2 {
+    margin-right: 10%;
+    flex-basis: 60%;
+}
+.aboutme{
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size: 11px;
+}
+.subtitle {
+    font-size: 3rem;
+    color: #ababab;
+}
+
+
+.skills {
+    margin: auto;
+    width: 80%;
+    margin-left: 7%;
+    margin-top: 10%;
+    padding: 90px 0;
+}
+.subtitle2 {
+    font-size: 3rem;
+    color: #ababab;
+    margin-bottom: 5%;
+}
+.Content {
+    width: 100%;   
+    padding: 0 20px;
+}
+.line {
+    margin-bottom: 15px;
+}
+.info {
+    display: flex;
+    justify-content: flex-start; 
+}
+.info span {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.bars {
+    height: 14px;
+    background: #282828;
+    border-radius: 3px;
+    width:100%
+}
+.percentage {
+    height: 14px;
+    background: crimson;
+    border-radius: 3px;
+    position: relative;
+    transition: width 1s ease-in-out;
+    animation: fillbars 2.5s 1;
+}
+.percentage::before {
+    content: attr(data-perc); 
+    position: absolute;
+    padding: 4px 6px;
+    background: #a2a2a2;
+    color: black;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+.percentage::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -10px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+@keyframes fillbars {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+.projects {
+    margin: auto;
+    width: 80%;
+    margin-left: 7%;
+    margin-top: 10%;
+}
+.subtitle3 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 2%;
+}
+.plist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 80px;
+    margin-top: 50px;
+}
+.heading {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+.para {
+    color: #ababab;
+}
+.plist div {
+    background: #262626;
+    padding: 40px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5sec;
+}
+.plist div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+}
+.plist div:hover {
+    background: linear-gradient(
+        to bottom,
+        rgba(243, 26, 26, 0.2) 0%,
+        rgba(243, 26, 26, 0.1) 50%,
+        rgba(243, 26, 26, 0.2) 100%
+    );
+    transform: translateY(-10px);
+}
+.plist div a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+    transition: height 0.3s ease-in-out;
+}
+.plist div a:hover::before {
+    height: 100%;
+    transition: height 0.3s ease-in-out, background-position 0.3s ease-in-out;
+    background-position: top;
+}
+
+
+.icons {
+    display: inline;
+    width: 30px;
+    margin-left: 5px;
+    transition: transform 0.5s;
+}
+.icons:hover {
+    transform: translateY(-5px);
+}
+.maps {
+    display: inline;
+    width: 90%;
+    margin-left: 10px;
+    height: 75%;
+
+}
+.conrow {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    margin-left: 7%;
+}
+.conleft {
+    flex-basis: 35%;
+}
+.conright {
+    flex-basis: 60%;
+}
+.email {
+    font-size: 1.5rem;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.btn {
+    display: inline-block;
+    width: 30%;
+    background: crimson;
+    border-radius: 4px;
+    border: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn:hover {
+    background-color: #c70039; 
+    color: white; 
+}
+.conright form {
+    width: 80%;
+}
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 16px;
+}
+form btn {
+    padding: 14px 60px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
